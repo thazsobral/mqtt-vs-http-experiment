@@ -1,16 +1,18 @@
-var mqtt = require('mqtt')
-var client  = mqtt.connect('mqtt://test.mosquitto.org')
+const port = 1883;
+const wsPort = 9001;
 
-client.on('connect', function () {
-  client.subscribe('presence', function (err) {
-    if (!err) {
-      client.publish('presence', 'Hello mqtt')
-    }
-  })
-})
+const aedes = require("aedes")();
+const ws = require("websocket-stream");
 
-client.on('message', function (topic, message) {
-  // message is Buffer
-  console.log(message.toString())
-  client.end()
-})
+const server = require("net").createServer(aedes.handle);
+const httpServer = require("http").createServer();
+ws.createServer({ server: httpServer }, aedes.handle);
+
+server.listen(port, function () {
+  console.log("server started and listening on port " + port);
+});
+
+httpServer.listen(wsPort, function () {
+  console.log("Aedes MQTT-WS listening on port " + wsPort);
+  aedes.publish({ topic: "aedes/hello", payload: "I'm broker " + aedes.id });
+});
