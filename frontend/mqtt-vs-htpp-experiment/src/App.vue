@@ -1,14 +1,14 @@
 <template>
-  <HelloWorld msg="MQTT vs HTPP Experiment"/>
+  <MainPage msg="MQTT vs HTPP Experiment"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainPage from './components/MainPage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainPage
   }
 }
 </script>
