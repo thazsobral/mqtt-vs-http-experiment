@@ -18,7 +18,7 @@ WiFiClient espClient;
 PubSubClient client(espClient);
 
 
-void setup_wifi() {
+void setupWifi() {
   delay(10);
   Serial.println();
   Serial.print("Connecting to ");
@@ -88,7 +88,7 @@ void setup() {
   
   Serial.begin(115200);
 
-  setup_wifi();
+  setupWifi();
 
   client.setServer(mqttServer, mqttPort);
   client.setCallback(callback);
