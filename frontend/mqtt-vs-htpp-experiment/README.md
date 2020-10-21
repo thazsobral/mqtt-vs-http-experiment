@@ -1,4 +1,4 @@
-# mqtt-vs-htpp-experiment
+# Front-end MQTT vs HTTP experiment
 
 ## Project setup
 ```
