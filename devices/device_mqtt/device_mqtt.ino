@@ -7,7 +7,6 @@ const char* mqttServer = "192.168.0.109";
 const int mqttPort = 1883;
 
 const int pinPump = 4;
-//const int pinPump = LED_BUILTIN;
 const int pinHumidity = 0;
 
 // Timers auxiliar variables
@@ -103,7 +102,7 @@ void loop() {
 
   now = millis();
 
-  if (now - lastMeasure > 30000) {
+  if (now - lastMeasure > 5000) {
     lastMeasure = now;
 
     float humidityPercent = readHumidity();
@@ -111,8 +110,6 @@ void loop() {
     sprintf(humidity, "%f", humidityPercent);
 
     client.publish("esp8266/humidity", humidity);
-    
-    Serial.print("Humidity: ");
-    Serial.println(humidity);
+
   }
 }

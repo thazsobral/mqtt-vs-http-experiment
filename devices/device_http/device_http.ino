@@ -42,7 +42,7 @@ float readHumidity(void) {
 
 void setup() {
   pinMode(pinPump, OUTPUT);
-  
+  digitalWrite(pinPump, HIGH);
   Serial.begin(115200);
 
   setupWifi();
@@ -51,6 +51,7 @@ void setup() {
 }
 
 void loop() {
+  now = millis();
   if (now - lastMeasure > 5000) {
     lastMeasure = now;
 
@@ -65,18 +66,7 @@ void loop() {
       http.begin(client, "http://192.168.0.109:3000/sensor/");
       http.addHeader("Content-Type", "application/json");
       int httpCode = http.POST(json);
-  
-      if (httpCode > 0) {
-        Serial.printf("[HTTP] POST... code: %d\n", httpCode);
-        if (httpCode == HTTP_CODE_OK) {
-          const String& payload = http.getString();
-          Serial.print("received payload: ");
-          Serial.println(payload);
-        }
-      } else
-        Serial.printf("[HTTP] POST... failed, error: %s\n", http.errorToString(httpCode).c_str());
       http.end();
     }
   }
-  now = millis();
 }

@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.post("/sensor", (req, res) => {
   console.log(req.body);
-  res.send("OK");
+  res.sendStatus("201");
 });
 
 app.listen(3000, () => {
