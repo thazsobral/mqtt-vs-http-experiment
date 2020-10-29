@@ -3,9 +3,9 @@
 </p>
 
 # mqtt-vs-http-experiment
+Esse projeto têm como finalidade estudar as principais características, vantagens e desvantagens dos protocolos HTTP e MQTT.
 
-## features
-
+## Features
 - node v14.0.0
 - npm 6.14.4
 - @vue/cli 4.5.7 
