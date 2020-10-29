@@ -1,19 +1,12 @@
 # Devices
 
-```
-
-```
-
 ## Features
 
 ### Parts
 
 ```
-
+- ESP8266 NodeMCU
+- Soil moisture sensor
 ```
 
-### Conections
-
-```
-
-```
+### Conections :construction:
