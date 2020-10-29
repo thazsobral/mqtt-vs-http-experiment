@@ -1,12 +1,45 @@
 # Back-end MQTT vs HTTP experiment
-## Back-end MQTT
-### Features
-### Project setup
-### Compiles and hot-reloads for development
-### Lints and fixes files
 
 ## Back-end HTTP
-### Features
-### Project setup
+
+### Project setup 
+```
+npm install
+```
+
 ### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
 ### Lints and fixes files
+```
+npm run lint
+```
+
+### Features
+```
+
+```
+
+## Back-end MQTT
+
+### Project setup 
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Features
+```
+
+```
