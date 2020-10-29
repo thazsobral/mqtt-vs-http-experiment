@@ -1,9 +1,12 @@
 # Back-end MQTT vs HTTP experiment
-
 ## Back-end MQTT
-
-### Setup
+### Features
+### Project setup
+### Compiles and hot-reloads for development
+### Lints and fixes files
 
 ## Back-end HTTP
-
-### Setup
+### Features
+### Project setup
+### Compiles and hot-reloads for development
+### Lints and fixes files
