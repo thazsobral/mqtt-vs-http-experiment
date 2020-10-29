@@ -3,7 +3,7 @@
 </p>
 
 # mqtt-vs-http-experiment
-Esse projeto têm como finalidade estudar as principais características, vantagens e desvantagens dos protocolos HTTP e MQTT.
+Esse projeto têm como finalidade estudar comparativamente as principais características, vantagens e desvantagens dos protocolos HTTP e MQTT.
 
 ## Features
 - node v14.0.0
