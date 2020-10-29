@@ -3,9 +3,11 @@
 </p>
 
 # mqtt-vs-http-experiment
+## Descrição
 Esse projeto têm como finalidade estudar comparativamente as principais características, vantagens e desvantagens dos protocolos HTTP e MQTT.
 
-## Features
-- node v14.0.0
-- npm 6.14.4
-- @vue/cli 4.5.7 
+## Tópicos
+- [Device](https://github.com/ThazSobral/mqtt-vs-http-experiment/tree/main/devices)
+- [Back-end](https://github.com/ThazSobral/mqtt-vs-http-experiment/tree/main/backends)
+- [Front-end](https://github.com/ThazSobral/mqtt-vs-http-experiment/tree/main/frontend/mqtt-vs-htpp-experiment)
+- [Data](https://github.com/ThazSobral/mqtt-vs-http-experiment/tree/main/data)
