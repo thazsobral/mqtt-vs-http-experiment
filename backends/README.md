@@ -9,17 +9,12 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev
 ```
 
 ### Lints and fixes files
 ```
 npm run lint
-```
-
-### Features
-```
-
 ```
 
 ## Back-end MQTT
@@ -31,15 +26,10 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev
 ```
 
 ### Lints and fixes files
 ```
 npm run lint
-```
-
-### Features
-```
-
 ```
