@@ -11,3 +11,4 @@ Esse projeto têm como finalidade estudar comparativamente as principais caracte
 - [Back-end](https://github.com/ThazSobral/mqtt-vs-http-experiment/tree/main/backends)
 - [Front-end](https://github.com/ThazSobral/mqtt-vs-http-experiment/tree/main/frontend/mqtt-vs-htpp-experiment)
 - [Data](https://github.com/ThazSobral/mqtt-vs-http-experiment/tree/main/data)
+- [Analyze](https://github.com/ThazSobral/mqtt-vs-http-experiment/blob/main/analyse_mqtt_vs_http.ipynb)
