@@ -1,3 +1,19 @@
 # Devices
-## Configurações
-## Conexões
+
+```
+
+```
+
+## Features
+
+### Parts
+
+```
+
+```
+
+### Conections
+
+```
+
+```
