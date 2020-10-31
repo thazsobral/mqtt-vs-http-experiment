@@ -9,4 +9,8 @@
 - Soil moisture sensor
 ```
 
-### Conections :construction:
+### Conections
+
+<p align="center">
+    <img src="..\images\image-circuit.png" width="25%">
+</p>
